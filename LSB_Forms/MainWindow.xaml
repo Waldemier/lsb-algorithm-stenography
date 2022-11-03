@@ -1,0 +1,25 @@
+﻿<Window x:Class="LSB_Forms.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LSB_Forms"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="479" Width="800">
+    <Grid>
+        <Image Name = "BmpImage" Margin="62,54,526,160">
+        </Image>
+        <Button Name="UploadButton" Margin="320,333,293,74" Click="Upload_Click" AutomationProperties.HelpText="Upload Bmp File" Content="Upload BMP"></Button>
+        <Button Name="StartButton" Margin="560,333,59,74" Click="Start_Click" Content="Encode" />
+        <Label Content="Created by Volodymyr Didukh" HorizontalAlignment="Left" Margin="573,44,0,0" VerticalAlignment="Top" Width="176"/>
+        <Label Content="KBBI-12" HorizontalAlignment="Left" Margin="688,75,0,0" VerticalAlignment="Top" Width="53" Height="27"/>
+        <TextBox x:Name="SecretTextBox" HorizontalAlignment="Left" Margin="89,293,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" Background="Black" Foreground="White" Height="31" FontSize="16"/>
+        <Label Content="Secret" HorizontalAlignment="Left" Margin="33,296,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="ErrorMessage" HorizontalAlignment="Left" Margin="320,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="421" Height="114" Foreground="#FFFF0101" />
+        <Button x:Name="Decode_Button" Margin="560,402,59,10" Click="Decode_Click" AutomationProperties.HelpText="Decode" Content="Decode"/>
+        <TextBox x:Name="Decoded_Text_Textbox" HorizontalAlignment="Left" Margin="89,345,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" Background="Black" Foreground="White" Height="96" FontSize="16"/>
+        <Label Content="Decoded &#xD;&#xA;  secret" HorizontalAlignment="Left" Margin="20,338,0,0" VerticalAlignment="Top" Height="46" Width="69"/>
+        <Button x:Name="Clear_Button" Margin="320,402,293,10" Click="Clear_Click" AutomationProperties.HelpText="Clear" Content="Clear"/>
+        <TextBox x:Name="Status_TextBox" HorizontalAlignment="Left" Margin="320,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="421" Height="24" Foreground="Black" Text="Status:" />
+    </Grid>
+</Window>
